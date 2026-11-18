@@ -1,0 +1,9 @@
+image,object_id,error_type,reviewer,note
+img_003.jpg,,khong,Codex,Chưa phát hiện lỗi chắc chắn trong lượt kiểm ảnh toàn khung; không phải chứng nhận không còn lỗi.
+img_005.jpg,48,sai_vi_tri_kich_thuoc,Codex,Box người áo đỏ nhỏ bên phải chỉ lấy phần đầu/thân; cần kiểm và bao chân nhìn thấy phía dưới.
+img_006.jpg,,khong,Codex,Đã đối chiếu vùng người bên phải và xe tiền cảnh; chưa thấy lỗi chắc chắn ở lượt kiểm này.
+img_009.jpg,,khong,Codex,Xe tiền cảnh đã bổ sung; hàng chở rời không được dùng để kéo rộng box toàn bộ xe.
+img_017.jpg,,khong,Codex,Ba tuk-tuk và hai người tiền cảnh đã có nhãn; vật xa 159 vẫn cần chú ý khi chốt.
+img_018.jpg,,khong,Codex,Đã có ignore_region cho cụm xa và người/xe gần; không suy ra toàn tập đạt chất lượng.
+img_029.jpg,467,thua,Codex,Box chỉ đầu phía phải trùng với người đã có box thân; cần hợp nhất theo một người một nhãn.
+img_035.jpg,522,thua,Codex,Box phần đầu ở mép trái trùng người 537.

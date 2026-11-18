@@ -1,0 +1,13 @@
+{
+  "source": "batch_reviewed_NguyenTruongGiang.json",
+  "sha256": "172fd7e77cf6d730628229b84b34f4eb7e191cd99067af9693086b68d8981e76",
+  "reviewer": "Nguyễn Trường Giang",
+  "review_minutes_user_reported": 10,
+  "qc_reviewer": "Codex",
+  "date": "2026-11-18",
+  "source_preserved": true,
+  "previous_assistant_pass_archived": "work/before_user_export",
+  "notes": "Current batch_reviewed.json is byte-identical to user export. No QC fixes silently applied.",
+  "gold_minutes_user_reported": 30,
+  "gold_time_update": "2026-11-18: user supplied 30 minutes for 4 gold images, superseding previous missing-time statement."
+}

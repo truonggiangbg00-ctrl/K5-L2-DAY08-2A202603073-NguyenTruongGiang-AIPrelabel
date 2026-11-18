@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-18",
+  "model": "sam2.1_b.pt",
+  "device": "cpu",
+  "elapsed_seconds": null,
+  "note": "Actual runs; duration was not logged. Original MobileSAM outputs preserved.",
+  "runs": [
+    {
+      "image": "img_009.jpg",
+      "box": [
+        170,
+        440,
+        476,
+        835
+      ],
+      "positive": [
+        [
+          250,
+          670
+        ],
+        [
+          235,
+          800
+        ],
+        [
+          210,
+          480
+        ]
+      ],
+      "negative": [
+        [
+          450,
+          530
+        ]
+      ],
+      "area_px": 40104,
+      "polygons": 3,
+      "output": "motorbike_img009_sam21.jpg"
+    },
+    {
+      "image": "img_013.jpg",
+      "box": [
+        88,
+        25,
+        933,
+        681
+      ],
+      "positive": [
+        [
+          400,
+          480
+        ],
+        [
+          550,
+          120
+        ],
+        [
+          450,
+          600
+        ]
+      ],
+      "negative": [
+        [
+          730,
+          300
+        ],
+        [
+          480,
+          230
+        ]
+      ],
+      "area_px": 305411,
+      "polygons": 1,
+      "output": "tuktuk_img013_sam21.jpg"
+    },
+    {
+      "image": "img_031.jpg",
+      "box": [
+        222,
+        338,
+        822,
+        681
+      ],
+      "positive": [
+        [
+          470,
+          610
+        ],
+        [
+          700,
+          610
+        ],
+        [
+          600,
+          500
+        ]
+      ],
+      "negative": [
+        [
+          500,
+          370
+        ],
+        [
+          410,
+          270
+        ]
+      ],
+      "area_px": 108040,
+      "polygons": 1,
+      "output": "bicycle_img031_sam21.jpg"
+    }
+  ]
+}

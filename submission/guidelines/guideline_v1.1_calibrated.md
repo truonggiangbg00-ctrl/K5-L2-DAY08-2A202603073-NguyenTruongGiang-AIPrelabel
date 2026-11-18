@@ -1,23 +1,17 @@
-# Label contract — Phố châu Á — BỔ SUNG v1.1 — <<MSHV - Họ tên>>
+# Bổ sung guideline v1.1 — 2A202603073 - Nguyễn Trường Giang
 
-> **Chỉ viết phần thay đổi so với v1.0** (không copy cả file). Chốt các câu hỏi mở ở mục 6 của v1.0 (hoặc nói rõ câu nào chưa chốt, vì sao)
-> và thêm quy tắc mới rút ra từ lỗi của máy / lỗi của bạn. Mỗi ca khó **có ảnh ví dụ** (`img_0xx`) và khớp một dòng trong `qc/calibration_decisions.csv`.
+## 1. Quy tắc bổ sung sau calibration
+- CAL-02, img_009 và img_031: giỏ, giá đỡ gắn cố định thuộc xe; hàng rời nhô hơn khoảng 20% chiều dài xe không thuộc box/mask xe. Vẽ phần xe nhìn thấy, không suy đoán phần bị che.
+- CAL-03, img_029 và img_035: một người chỉ có một box. Box đầu nằm trong box thân của cùng người là trùng; hai người đứng sát nhau vẫn là hai box. Không gộp theo độ chồng lấp đơn thuần.
+- CAL-05, img_005 và img_029: không đặt ngưỡng conf để chấp nhận mà không kiểm. Điểm cao không thay thế kiểm lớp, biên và vật bị bỏ sót.
 
-## 1. Câu hỏi mở đã chốt (từ mục 6 của v1.0)
+## 2. Quy tắc v1.0 được làm rõ bằng ví dụ
+- CAL-01: xích lô ở img_010, img_017 là three_wheeler, gồm khung và mui; người trên/ngoài xe có box person riêng. Đây là sửa lỗi áp dụng taxonomy, không phải đổi lớp của đề.
+- CAL-04: mũ trưng bày trong img_031 không phải person; xóa box giả quanh mũ.
+- Vật cao dưới 20 px không gán riêng; chỉ gom ignore_region nếu là cụm ít nhất 5 vật sát nhau khó tách. Không dùng ignore để bỏ qua vật lớn rõ ràng.
 
-| # | Câu hỏi | Quyết định | Ảnh ví dụ | `case_id` |
-|---|---|---|---|---|
-| <<1>> | <<xe đạp điện: bicycle hay motorbike?>> | <<>> | <<img_0xx>> | <<CAL-01>> |
+## 3. Câu hỏi còn mở và giới hạn
+Xe điện chưa có ca đủ rõ để chốt. Xe hàng img_008 còn cần xác nhận cấu trúc hai/ba bánh. Các ca can_review cần đối chiếu khi sửa vòng tiếp theo. Không coi bản này là bằng chứng đã giải quyết mọi trường hợp.
 
-## 2. Ca khó mới (từ lỗi của máy, bẫy lọt, box `can_review`)
-
-| Ảnh | Tình huống | Máy làm gì (model nào) | Quyết định của bạn | Quy tắc mới (vào mục nào của v1.0) |
-|---|---|---|---|---|
-| <<img_0xx>> | <<>> | <<>> | <<>> | <<>> |
-
-## 3. Lịch sử thay đổi
-
-| Phiên bản | Thay đổi | Lý do (ca nào, `case_id`) |
-|---|---|---|
-| v1.0 | Bản giảng viên | — |
-| v1.1 | <<tóm tắt các thay đổi ở mục 1–2>> | <<>> |
+## 4. Lịch sử
+v1.0: giữ nguyên bản đề. v1.1 ngày 2026-11-18: thêm quy tắc hàng hóa và phụ kiện, box trùng theo cá thể, không tự chấp nhận theo conf; có 5 dòng CAL-01–05 trong calibration_decisions.csv. Các quyết định hiện phục vụ đánh giá và kế hoạch Rework, không thay bản export của học viên một cách âm thầm.

@@ -1,15 +1,16 @@
-# Thư mục nộp bài
+# Bài Day08 — Nguyễn Trường Giang — 2A202603073
 
-Xem cấu trúc bắt buộc ở [../SUBMISSION.md](../SUBMISSION.md). Các file bạn **tự điền** (khuôn có sẵn ở đây):
+Các file trong thư mục này đã được cập nhật trực tiếp theo export `labels/batch_reviewed_NguyenTruongGiang.json`.
 
-| File | Điền gì | Ví dụ một dòng |
-|---|---|---|
-| `model_log.csv` | mỗi lần chạy `prelabel.py` một dòng; copy cột có sẵn từ `work/runs.csv`, tự viết 3 cột nhận xét | `r03,2,yoloe,"--prompts 'tuk-tuk=three_wheeler' --conf 0.25",pilot,9,0.3,"tìm 4/5 tuk-tuk ở img_002","bỏ sót xích lô img_011; box lỏng ~10%","dùng cho three_wheeler"` |
-| `time_log.csv` | thời gian **thật** | `gold_manual,4,25,"gán tay 4 ảnh"` · `batch_review,24,80,"duyệt 24 ảnh"` |
-| `REPORT.md` | báo cáo chính (8 mục, khuôn trong file) | |
-| `guidelines/guideline_v1.1_calibrated.md` | **chỉ phần bổ sung** so với v1.0 (khuôn trong file) | |
-| `qc/calibration_decisions.csv` | mỗi quyết định calibration **một dòng** | `CAL-01,img_013\|img_004,loi_may,"YOLO26 gọi tuk-tuk là car","luôn gán three_wheeler","mục 2 v1.0",v1.1` |
-| `qc/qc_review.csv` | do `qc_sample.py` tạo sẵn; bạn điền `error_type` | |
-| `masks/*.jpg` | ảnh mask từ `sam2_points.py --out submission/masks --name ...` (≥ 3) | |
+- [REPORT.md](REPORT.md): báo cáo 8 phần và kết luận HOLD — cần REWORK.
+- [labels/batch_reviewed.json](labels/batch_reviewed.json): bản nhãn chính, giống nguyên byte với export học viên; 24 ảnh, 550 đối tượng.
+- [qc/review_stats.md](qc/review_stats.md): thống kê review; bắt bẫy 8/12.
+- [qc/qc_report_auto.md](qc/qc_report_auto.md): QC 8 ảnh, 211 đối tượng; phát hiện 3 đối tượng lỗi trong 3 ảnh.
+- [qc/calibration_decisions.csv](qc/calibration_decisions.csv): 5 quyết định calibration.
+- [guidelines/guideline_v1.1_calibrated.md](guidelines/guideline_v1.1_calibrated.md): phần bổ sung guideline.
+- [masks/](masks/): 3 thử nghiệm MobileSAM và 3 thử nghiệm SAM 2.1, kèm cấu hình prompt.
+- [release/](release/): release candidate, chưa đạt quyết định Release.
+- [time_log.csv](time_log.csv): gold 30 phút/4 ảnh và review 10 phút/24 ảnh theo học viên cung cấp.
+- [NEXT_STEPS.md](NEXT_STEPS.md): các mục học viên cần chốt trước khi nộp.
 
-Các file còn lại do **script** sinh ra: **không sửa tay**.
+Đã bổ sung thời gian gold_manual theo thông tin mới của học viên. Kết luận chất lượng vẫn là HOLD — cần REWORK theo số liệu QC. Học viên tự bổ sung lớp, nhận xét cá nhân và mục sử dụng công cụ trong báo cáo trước nộp.

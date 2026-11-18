@@ -1,0 +1,4 @@
+case_id,image,nguon,van_de,de_xuat,trang_thai
+CAL-01,img_009,loi_may,MobileSAM chỉ lấy bánh trước và chắn bùn,Kiểm toàn bộ phần xe nhìn thấy và thêm prompt; không chấp nhận mask chỉ vì có đầu ra,chờ học viên kiểm và chốt
+CAL-02,img_008,cau_hoi_mo,Xe chở hàng dễ lẫn xe đẩy với xe ba bánh,Kiểm bánh khung và cơ cấu vận hành; chưa chắc thì can_review thay vì ép three_wheeler,chờ học viên kiểm và chốt
+CAL-03,img_031,loi_may,Mask bánh xe lấp khoảng trống và thiếu khung,Soát khe hở theo guideline 4.2 và chỉnh mask trước chấp nhận,chờ học viên kiểm và chốt
