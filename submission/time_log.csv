@@ -1,3 +1,3 @@
 step,images,minutes,note
-gold_manual,4,30,Học viên bổ sung ngày 2026-11-18: gán tay 4 ảnh gold trong 30 phút; cập nhật thông tin trước đó chưa có thời gian.
-batch_review,24,10,Học viên cung cấp: 10 phút cho lượt review 24 ảnh vừa hoàn thành. Không bao gồm xử lý kỹ thuật và QC tiếp theo.
+gold_manual,4,30, gán tay 4 ảnh gold trong 30 phút
+batch_review,24,10, 10 phút cho lượt review 24 ảnh vừa hoàn thành. Không bao gồm xử lý kỹ thuật và QC tiếp theo.
