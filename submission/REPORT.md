@@ -123,8 +123,8 @@ Kế hoạch: chốt img_008, sửa các lỗi QC, rà lại bốn ảnh lọt b
 
 ## 8. Ghi chú cá nhân
 
-- Mục “Dùng AI để làm bài”: học viên tự bổ sung theo yêu cầu riêng trước khi nộp.
-- Theo xác nhận học viên, 4 ảnh gold đã gán tay trước khi xem AI. Thời gian được học viên bổ sung: 30 phút/4 ảnh; review 10 phút/24 ảnh. Chưa đo toàn bộ chi phí QC và sửa lỗi nên chưa đủ dữ liệu kết luận hiệu quả ở chất lượng tương đương.
+- Dùng AI để làm bài: dùng AI tổng hợp nội dung và đọc tài liệu.
+- Gold có bị nhiễm không (bạn có nhìn pre-label hay hỏi AI trước khi gán xong)? Không,4 ảnh gold đã gán tay trước khi xem AI. Thời gian gán nhãn: 30 phút/4 ảnh; review 10 phút/24 ảnh.
 - Máy Windows + Ubuntu WSL, CVAT 2.74.1; các lần chạy trong log dùng CPU. YOLOE chạy qua Nuclio local do môi trường Windows gặp chặn DLL. Không dùng cache dự đoán thay các lần chạy trong log.
 - Ba function Day08 đã triển khai. Detector có conf/can_review, YOLOE xuất rectangle để tương thích task box; task skeleton không dùng mapping box.
 - Nhận xét cá nhân và điều sẽ làm khác lần sau: học viên tự bổ sung. Gợi ý từ số liệu là tăng thời gian kiểm vật nhỏ/che khuất và ghi thời gian ngay từ đầu; đây chưa phải lời tự nhận của học viên.
